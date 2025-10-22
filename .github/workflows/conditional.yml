@@ -8,7 +8,7 @@ jobs:
       - name: "Hello World"
         run:  |
           echo "Hello World!"
-          format('Hello {0} {1} {2}', 'uNO', 'Dos', 'Tres')
+          echo ${{ format('Test Hello {0} {1} {2}', 'uNO', 'Dos', 'Tres') }}
   goodbye-moon:
     runs-on: ubuntu-latest
     steps:
